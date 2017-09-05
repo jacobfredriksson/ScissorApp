@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'MillerBanner';
+  src: url('/Resources/Font/Font_Bureau.otf');
+}
+
+* {
+  font-family: 'MillerBanner';
+}

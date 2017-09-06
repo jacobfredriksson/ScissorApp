@@ -11,7 +11,7 @@ export default class ProfilePage extends Component {
     return (
       <div>
         <p> Välkommen till Profilen </p>
-        <BackButton className="btn btn-success"
+        <BackButton className={this.props.className}
         />
       </div>
     );

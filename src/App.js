@@ -2,17 +2,9 @@ import React, { Component } from 'react'
 import './css/App.css'
 import Home from './Home'
 import Saloons from './Saloons'
-import BookingButton from './BookingButton'
-import FavoriteButton from './FavoriteButton'
-import LoginButton from './LoginButton'
-import ProfileButton from './ProfileButton'
-import ScheduleButton from './ScheduleButton'
-import SchedulePage from './SchedulePage'
-import ProfilePage from './ProfilePage'
-import LoginPage from './LoginPage'
-import FavoritePage from './FavoritePage'
-import BookingPage from './BookingPage'
-import BackButton from './BackButton'
+
+
+import {HashRouter, Link, Route} from 'react-router-dom'
 
 
 export default class App extends Component {
@@ -110,68 +102,10 @@ export default class App extends Component {
   }
 
 
-
-  renderStartState() {
-    if(this.state.profile === true) {
-      return [
-        <ProfilePage />
-      ]
-    } else if (this.state.schedule === true) {
-      return [
-        <SchedulePage />
-      ]
-    } else if (this.state.saloon === true) {
-      return [
-        <Saloons />
-      ]
-    } else if (this.state.login === true) {
-      return [
-        <LoginPage />
-      ]
-    } else if (this.state.booking === true) {
-      return [
-        <BookingPage />
-      ]
-    } else if (this.state.favorite === true) {
-      return [
-        <FavoritePage />
-      ]
-    } else if (this.state.home === true) {
-      return [
-        <Home
-          saloon={this.saloon.bind(this)}
-          schedule={this.schedule.bind(this)}
-          booking={this.booking.bind(this)}
-          favorite={this.favorite.bind(this)}
-          profile={this.profile.bind(this)}
-          login={this.login.bind(this)}
-          frontPage={this.frontPage.bind(this)}
-        />
-      ]
-    } else {
-      return [
-        <div>
-          <Home
-            saloon={this.saloon.bind(this)}
-            schedule={this.schedule.bind(this)}
-            booking={this.booking.bind(this)}
-            favorite={this.favorite.bind(this)}
-            profile={this.profile.bind(this)}
-            login={this.login.bind(this)}
-            frontPage={this.frontPage.bind(this)}
-          />
-        </div>
-      ]
-    }
-  }
-
-
-
-
   render() {
     return (
       <div>
-        {this.renderStartState()}
+        <Home />
         {this.allSalons()}
       </div>
     );

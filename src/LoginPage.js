@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import './css/HomeButton.css'
+import BackButton from './BackButton'
 
 export default class LoginPage extends Component {
   constructor(props) {
@@ -11,6 +11,7 @@ export default class LoginPage extends Component {
     return (
       <div>
         <p> Välkommen till Loginsidan </p>
+        <BackButton className={this.props.className}/>
       </div>
     );
   }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {HashRouter, Link, Route} from 'react-router-dom'
+import Home from './Home'
 
 export default class BackButton extends Component {
   constructor(props) {
@@ -7,10 +9,17 @@ export default class BackButton extends Component {
 
   render() {
     return (
+      <HashRouter>
       <div>
+        <button className="btn btn-success"> <Link to="/Home">Backa </Link></button>
 
-        <button onClick={() => this.props.frontPage()} className={this.props.className} name={this.props.name}>Backa</button>
+        <Route path="/Home" render={() => (
+          <Home
+
+          />
+        )}/>
       </div>
+      </HashRouter>
     );
   }
 }

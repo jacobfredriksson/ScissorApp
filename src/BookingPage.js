@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import BackButton from './BackButton'
 
 export default class BookingPage extends Component {
-  constructor(props) {
-    super(props)
-  }
+
 
 
   render() {

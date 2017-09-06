@@ -3,9 +3,7 @@ import {HashRouter, Link, Route} from 'react-router-dom'
 import Home from './Home'
 
 export default class BackButton extends Component {
-  constructor(props) {
-    super(props)
-  }
+
 
   render() {
     return (

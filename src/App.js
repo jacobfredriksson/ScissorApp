@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
 import './css/App.css'
 import Home from './Home'
-import Saloons from './Saloons'
-
-
-import {HashRouter, Link, Route} from 'react-router-dom'
 
 
 export default class App extends Component {

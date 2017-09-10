@@ -41,10 +41,20 @@ export default class App extends Component {
       schedule: {
         value: false,
         name: 'schedule'
+      },
+
+      hair: {
+        value: false,
+        name: 'hair'
       }
     }
   }
 
+  home() {
+    this.setState({
+      home: true
+    })
+  }
 
   saloon() {
     this.setState({
@@ -88,6 +98,12 @@ export default class App extends Component {
     })
   }
 
+  hairAlt() {
+    this.setState({
+      hair: true
+    })
+  }
+
   allSalons() {
     fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
       .then(resp => resp.json())
@@ -101,7 +117,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Home />
+        <Home saloon={this.saloon.bind(this)}
+              home={this.home.bind(this)}
+        />
         {this.allSalons()}
       </div>
     );

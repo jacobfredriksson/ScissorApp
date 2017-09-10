@@ -1,0 +1,14 @@
+.footer {
+  position: relative;
+  bottom:0;
+  background-color: #C4BFBF;
+  height: 9.5%;
+  text-align: center;
+  float: left;
+}
+
+.footer-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

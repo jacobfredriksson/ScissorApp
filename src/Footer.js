@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import {HashRouter, Link, Route} from 'react-router-dom';
-import './css/Footer.css'
+import './css/Footer.css';
 import BookingPage from './BookingPage';
-import FavoritePage from './FavoritePage';
-import ProfilePage from './ProfilePage';
-import Saloons from './Saloons';
-import SchedulePage from './SchedulePage';
+import Saloons from './Saloons'
 
 export default class Home extends Component {
 
@@ -22,29 +19,8 @@ export default class Home extends Component {
               <li> <Link to="/ProfilePage">Profil </Link> </li>
             </ul>
           </div>
-
-          <Route path="/BookingPage" render={() => (
-            <BookingPage />
-          )}/>
-
-          <Route path="/FavoritePage" render={() => (
-            <FavoritePage />
-          )}/>
-
-
-          <Route path="/Schedule" render={() => (
-            <SchedulePage />
-          )}/>
-
-          <Route path="/ProfilePage" render={() => (
-            <ProfilePage />
-          )}/>
-
-          <Route path="/Saloons" render={() => (
-            <Saloons />
-          )}/>
-
         </div>
+
       </HashRouter>
     );
   }

@@ -8,7 +8,7 @@ export default class BookingPage extends Component {
   render() {
     return (
       <div>
-        <p> Välkommen till Bokning </p>
+        <p> Välkommen till Bokningar </p>
         <BackButton className={this.props.className}/>
       </div>
     );

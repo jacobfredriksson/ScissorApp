@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
-import {HashRouter} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import App from './App';
 
 
 
+
+
 ReactDOM.render(<HashRouter>
-    <App />
+  <div>
+    <Route path="/" render={() => (
+      <div>
+        <App />
+      </div>
+    )}/>
+  </div>
   </HashRouter>, document.getElementById('root'));

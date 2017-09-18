@@ -45,6 +45,7 @@ li a:active {
   text-align: center;
   background-color: #fff;
   border-bottom: 1px solid #D8D8D8;
+  margin-bottom: 2px;
 }
 
 .open>a{

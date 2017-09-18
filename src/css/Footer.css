@@ -1,14 +1,23 @@
-.footer {
+/*.footer {
   position: relative;
-  bottom:0;
-  background-color: #C4BFBF;
-  height: 9.5%;
-  text-align: center;
+  bottom: 0;
   float: left;
+  background-color: blue;
+  border-bottom: 1px solid #D8D8D8;
+  text-align: center;
+  display: block;
+}*/
+
+.footer-ul {
+  border-bottom: 1px solid #D8D8D8;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  text-align: center;
 }
 
-.footer-items {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.footer-ul li a {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }

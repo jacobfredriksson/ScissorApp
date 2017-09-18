@@ -46,7 +46,9 @@ export default class App extends Component {
       hair: {
         value: false,
         name: 'hair'
-      }
+      },
+
+      salonger: []
     }
   }
 
@@ -56,71 +58,53 @@ export default class App extends Component {
     })
   }
 
-  saloon() {
-    this.setState({
-      saloon: true
-    })
-  }
 
-  schedule() {
-    this.setState({
-      schedule: true
-    })
-  }
 
-  booking() {
-    this.setState({
-      booking: true
-    })
-  }
 
-  favorite() {
-    this.setState({
-      favorite: true
-    })
-  }
+  componentDidMount() {
+      fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
+        .then((resp) => resp.json())
+        .then((data) => {
+          console.log(data)
+          this.setState({
+            salonger: data
+          })
+      })
+    }
 
-  login() {
-    this.setState({
-      login: true
-    })
-  }
+  // allSalons() {
+  //   fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
+  //     .then(resp => resp.json())
+  //     .then(function (data){
+  //       console.log(data[0].open)
+  //       let hairSalons = data;
+  //       let myHairSalons = hairSalons.map(x =>
+  //         `
+  //           <h1> ${data[1].name} </h1>
+  //         `
+  //       )
+  //       this.setState({
+  //         salonger: myHairSalons
+  //       })
+  //   })
+  // }
 
-  profile() {
-    this.setState({
-      profile: true
-    })
-  }
+    test() {
 
-  frontPage() {
-    this.setState({
-      home: true
-    })
-  }
+      this.state.salonger.map((bajs, korv) =>
+      <h1> {bajs.name} </h1>
+    )
+    }
 
-  hairAlt() {
-    this.setState({
-      hair: true
-    })
-  }
-
-  allSalons() {
-    fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
-      .then(resp => resp.json())
-      .then(function (data){
-      let hairSalons = data
-      console.log(hairSalons)
-    })
-  }
 
 
   render() {
     return (
       <div>
-        <Home saloon={this.saloon.bind(this)}
-              home={this.home.bind(this)}
+        <Home
+            salonger={this.state.salonger}
         />
-        {this.allSalons()}
+        {/* {this.allSalons()} */}
       </div>
     );
   }

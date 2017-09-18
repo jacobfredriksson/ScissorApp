@@ -1,5 +1,4 @@
 .logo {
-  height: 50%;
   text-align: center;
-  float: left;
+  z-index: -1;
 }

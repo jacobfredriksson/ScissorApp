@@ -17,7 +17,7 @@ export default class Home extends Component {
   render() {
     return (
       <HashRouter>
-        <div>
+        <div className="container-fluid">
           <Logo />
           <Switch>
 
@@ -42,7 +42,9 @@ export default class Home extends Component {
             )}/>
 
             <Route exact path="/Saloons" render={() => (
-              <Saloons />
+              <Saloons
+                      salonger={this.props.salonger}
+              />
             )}/>
           </Switch>
 

@@ -7,15 +7,10 @@ import {HashRouter, Route, Switch} from 'react-router-dom';
 import App from './App';
 
 
-
-
-
 ReactDOM.render(<HashRouter>
   <div>
     <Route path="/" render={() => (
-      <div>
         <App />
-      </div>
     )}/>
   </div>
   </HashRouter>, document.getElementById('root'));

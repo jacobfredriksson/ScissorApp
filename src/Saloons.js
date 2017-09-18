@@ -19,9 +19,12 @@ export default class Saloons extends Component {
 
           <img className="stars" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/stars.png?raw=true"/>
 
+          <p className="number"> {this.props.salonger.rating}</p>
+
 
           <BackArrow />
 
+          <h3 className="type-of-saloon"> {this.props.salonger.name} </h3>
 
           <div className="info-schedule-container">
             <div className="info-schedule">
@@ -38,13 +41,15 @@ export default class Saloons extends Component {
           <div className="row Price-box">
             <p className="col-sm-8 price-interval"> Pris 250-500 kr </p>
           </div> */}
-          {
-            this.props.salonger.map((salongerna, i) =>
-            <div className="">
-              <p className="saloon-name"> {salongerna.name} </p>
+
+            <div className="saloon-info">
+              <p className="saloon-border"> <img className="find-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/find.png?raw=true"/>{this.props.salonger.adress} </p>
+              <p className="saloon-border"> <img className="watch-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/watch.png?raw=true"/>{this.props.salonger.open} </p>
+              <p className="saloon-border"> <img className="phone-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/phone.png?raw=true" />{this.props.salonger.tel} </p>
+              <p className="saloon-border"> <img className="web-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/worldwideweb.png?raw=true"/>{this.props.salonger.site} </p>
+              <p className="saloon-desc"> {this.props.salonger.desc} </p>
             </div>
-            )
-          }
+
         </div>
       </HashRouter>
     );

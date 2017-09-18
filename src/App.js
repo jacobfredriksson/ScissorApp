@@ -67,7 +67,7 @@ export default class App extends Component {
         .then((data) => {
           console.log(data)
           this.setState({
-            salonger: data
+            salonger: data[0]
           })
       })
     }

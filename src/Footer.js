@@ -7,9 +7,8 @@ export default class Home extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="row">
           <div className="col-sm-12">
-            <ul className="footer-ul col-sm-12">
+            <ul className="footer-ul">
               <li> <Link to="/Home">Hem </Link> </li>
               <li> <Link to="/Schedule">Tider </Link> </li>
               <li> <Link to="/Saloons"> Salonger </Link> </li>
@@ -17,7 +16,6 @@ export default class Home extends Component {
               <li> <Link to="/BookingPage">Boka </Link> </li>
               <li> <Link to="/ProfilePage">Profil </Link> </li>
             </ul>
-          </div>
         </div>
       </HashRouter>
     );

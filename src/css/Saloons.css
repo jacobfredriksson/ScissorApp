@@ -28,6 +28,20 @@
   width: 25%;
 }
 
+.number {
+  position: absolute;
+  left: 35%;
+  top: 32%;
+  color: #F9F9F9;
+}
+
+.type-of-saloon {
+  position: absolute;
+  left: 7%;
+  top: 25%;
+  color: #F9F9F9;
+}
+
 .info-schedule-container {
   border-bottom: 20px solid #F9F9F9;
   display: block;
@@ -44,7 +58,6 @@
 }
 
 .info-schedule a {
-  width: 100%;
   text-decoration: none;
   color: black;
 }
@@ -56,4 +69,16 @@
 .saloon-name {
   font-size: 2em;
   text-align: center;
+}
+
+.find-saloon, .watch-saloon, .phone-saloon, .web-saloon {
+  margin: 3%;
+}
+
+.saloon-desc {
+  margin-left: 3.5%;
+}
+
+.saloon-border {
+  border-bottom: 1px solid #F9F9F9;
 }

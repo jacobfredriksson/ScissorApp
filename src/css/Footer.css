@@ -1,18 +1,19 @@
-/*.footer {
+.footer {
   position: relative;
   bottom: 0;
   float: left;
-  background-color: blue;
   border-bottom: 1px solid #D8D8D8;
   text-align: center;
   display: block;
-}*/
+}
 
 .footer-ul {
-  border-bottom: 1px solid #D8D8D8;
-  padding: 5px;
-  margin: 5px;
-  float: left;
+  padding: 0;
+  padding-left: 10px;
+  margin: 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
   text-align: center;
 }
 

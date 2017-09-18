@@ -4,11 +4,11 @@ li {
   list-style-type: none;
 }
 
-li a{
+li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 20px 8px;
+  padding: 10px 5px;
   text-decoration: none;
   list-style-type: none;
 }

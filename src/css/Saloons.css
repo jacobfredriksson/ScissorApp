@@ -4,6 +4,56 @@
   margin: 0;
   margin: 2%;
   background: #FFFFFF;
-  border-top: 1px solid gold;
-  border-bottom: 1px solid gold;
+  border-top: 1px solid #B69F58;
+  border-bottom: 1px solid #B69F58;
+}
+
+.itopbar {
+  position: absolute;
+  width: 92%;
+  top: 0%;
+  opacity: 0.4;
+}
+
+.heart {
+  position: absolute;
+  right: 7%;
+  top: 5%;
+}
+
+.stars {
+  position: absolute;
+  left: 7%;
+  top: 32%;
+  width: 25%;
+}
+
+.info-schedule-container {
+  border-bottom: 20px solid #F9F9F9;
+  display: block;
+  padding: 30px;
+}
+
+.info-schedule {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 1.5em;
+  color: black;
+  list-style-type: none;
+}
+
+.info-schedule a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.info-schedule:hover {
+  border-bottom: 2px solid #B69F58;
+}
+
+.saloon-name {
+  font-size: 2em;
+  text-align: center;
 }

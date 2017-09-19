@@ -9,7 +9,7 @@ export default class Home extends Component {
       <HashRouter>
           <div className="col-sm-12">
             <ul className="footer-ul">
-              <li> <Link to="/Home">Hem </Link> </li>
+              <li> <Link to="/">Hem </Link> </li>
               <li> <Link to="/Schedule">Tider </Link> </li>
               <li> <Link to="/Saloons"> Salonger </Link> </li>
               <li> <Link to="/FavoritePage">Favoriter </Link> </li>

@@ -7,6 +7,7 @@ import FavoritePage from './FavoritePage';
 import ProfilePage from './ProfilePage';
 import Saloons from './Saloons';
 import SchedulePage from './SchedulePage';
+import ChooseSaloon from './ChooseSaloon';
 
 import {HashRouter, Route, Switch} from 'react-router-dom';
 
@@ -18,11 +19,14 @@ export default class Home extends Component {
     return (
       <HashRouter>
         <div className="container-fluid">
-          <Logo />
           <Switch>
 
             <Route exact path="/" render={() => (
-              <Categories />
+              <div>
+                <Logo />
+                <Categories />
+                <Footer />
+              </div>
             )}/>
 
             <Route exact path="/BookingPage" render={() => (
@@ -42,13 +46,20 @@ export default class Home extends Component {
             )}/>
 
             <Route exact path="/Saloons" render={() => (
-              <Saloons
+              <div>
+                <Logo />
+                <Saloons
+                      salonger={this.props.salonger}
+                />
+              </div>
+            )}/>
+
+            <Route exact path="/ChooseSaloon" render={() => (
+              <ChooseSaloon
                       salonger={this.props.salonger}
               />
             )}/>
           </Switch>
-
-          <Footer />
         </div>
       </HashRouter>
     );

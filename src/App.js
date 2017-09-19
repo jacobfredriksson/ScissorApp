@@ -89,13 +89,6 @@ export default class App extends Component {
   //   })
   // }
 
-    test() {
-
-      this.state.salonger.map((bajs, korv) =>
-      <h1> {bajs.name} </h1>
-    )
-    }
-
 
 
   render() {

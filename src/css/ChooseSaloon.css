@@ -1,0 +1,64 @@
+.header-title {
+  border-bottom: 1px solid #B69F58;
+  text-align: center;
+}
+
+.price-box {
+  height: 10%;
+}
+
+.price-interval {
+  margin-left: 4.5%;
+  font-size: 1.2em;
+}
+
+.filter-menu {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+
+.saloon-data {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #B69F58;
+  border-bottom: 2px solid #F9F9F9;
+}
+
+.time-choose-saloon {
+  font-weight: bold;
+  margin-right: 3%;
+}
+
+.name-choose-saloon {
+  font-size: 1.3em;
+  margin-right: 45%;
+  color: #202020;
+}
+
+.price-choose-saloon {
+  font-weight: bold;
+  color: #202020;
+}
+
+.stars-choose-saloon {
+  float: left;
+  padding-left: 13.5%;
+}
+
+.rating-choose-saloon {
+  font-size: 0.7em;
+  float: left;
+  margin-top: 1.2%;
+  margin-left: 2%
+}
+
+.timeEst-choose-saloon {
+  margin-left: 44%;
+  color: #656565;
+}
+
+.adress-choose-saloon {
+  margin-left: 13.5%;
+  color: #656565;
+}

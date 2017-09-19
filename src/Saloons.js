@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/Saloons.css';
-import BackButton from './BackButton';
 import BackArrow from './BackArrow';
+import IphoneTop from './IphoneTop';
 import {HashRouter, Link} from 'react-router-dom';
 
 export default class Saloons extends Component {
@@ -13,11 +13,11 @@ export default class Saloons extends Component {
       <HashRouter>
         <div>
 
-          <img className="itopbar" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/itopbar.png?raw=true"/>
+          <IphoneTop />
 
-          <img className="heart" src="        https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/heart.png?raw=true"/>
+          <img className="heart" src="        https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/heart.png?raw=true" alt="heart"/>
 
-          <img className="stars" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/stars.png?raw=true"/>
+          <img className="stars" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/stars.png?raw=true" alt="stars"/>
 
           <p className="number"> {this.props.salonger.rating}</p>
 
@@ -43,10 +43,10 @@ export default class Saloons extends Component {
           </div> */}
 
             <div className="saloon-info">
-              <p className="saloon-border"> <img className="find-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/find.png?raw=true"/>{this.props.salonger.adress} </p>
-              <p className="saloon-border"> <img className="watch-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/watch.png?raw=true"/>{this.props.salonger.open} </p>
-              <p className="saloon-border"> <img className="phone-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/phone.png?raw=true" />{this.props.salonger.tel} </p>
-              <p className="saloon-border"> <img className="web-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/worldwideweb.png?raw=true"/>{this.props.salonger.site} </p>
+              <p className="saloon-border"> <img className="find-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/find.png?raw=true" alt="find-icon"/>{this.props.salonger.adress}, <span>{this.props.salonger.zip} </span></p>
+              <p className="saloon-border"> <img className="watch-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/watch.png?raw=true" alt="watch-icon"/>{this.props.salonger.open} </p>
+              <p className="saloon-border"> <img className="phone-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/phone.png?raw=true" alt="phone-icon"/>{this.props.salonger.tel} </p>
+              <p className="saloon-border"> <img className="web-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/worldwideweb.png?raw=true" alt="wwww-icon"/>{this.props.salonger.site} </p>
               <p className="saloon-desc"> {this.props.salonger.desc} </p>
             </div>
 

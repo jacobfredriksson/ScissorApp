@@ -13,10 +13,10 @@ export default class Home extends Component {
               <div className="row">
                 <div className="col-sm-12">
                   <NavDropdown className="navDropdown" eventKey={3} title="Hår" id="basic-nav-dropdow">
-                    <Link to="/BookingPage">Klippa</Link>
-                    <Link to="/BookingPage">Slinga</Link>
-                    <Link to="/BookingPage">Färga</Link>
-                    <Link to="/BookingPage">Rensa skägg</Link>
+                    <Link to="/ChooseSaloon">Klippa</Link>
+                    <Link to="/ChooseSaloon">Slinga</Link>
+                    <Link to="/ChooseSaloon">Färga</Link>
+                    <Link to="/ChooseSaloon">Rensa skägg</Link>
                   </NavDropdown>
                 </div>
               </div>

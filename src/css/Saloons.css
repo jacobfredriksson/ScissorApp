@@ -1,13 +1,3 @@
-.price-interval {
-  padding: 0;
-  width: 100%;
-  margin: 0;
-  margin: 2%;
-  background: #FFFFFF;
-  border-top: 1px solid #B69F58;
-  border-bottom: 1px solid #B69F58;
-}
-
 .itopbar {
   position: absolute;
   width: 92%;
@@ -25,7 +15,8 @@
   position: absolute;
   left: 7%;
   top: 32%;
-  width: 25%;
+  max-width: 2%;
+  min-width: 25%;
 }
 
 .number {

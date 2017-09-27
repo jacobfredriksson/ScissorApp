@@ -11,7 +11,7 @@ export default class BackButton extends Component {
       <HashRouter>
       <div>
         <Link to="/">
-          <img className="backArrow" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/leftarrowbig.png?raw=true" alt="back arrow icon"/>
+          <img className="backArrow" src={require("./Images/leftarrowbig.png")} alt="back arrow icon"/>
         </Link>
         <HashRouter path="/" render={() => (
           <Home

@@ -13,11 +13,11 @@ export default class Saloons extends Component {
       <HashRouter>
         <div>
 
-          <IphoneTop />
+          <IphoneTop className=""/>
 
-          <img className="heart" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/heart.png?raw=true" alt="heart"/>
+          <img className="heart" src={require("./Images/heart.png")} alt="heart"/>
 
-          <img className="stars" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/stars.png?raw=true" alt="stars"/>
+          <img className="stars" src={require("./Images/stars.png")} alt="stars"/>
 
           <p className="number"> {this.props.salonger.rating}</p>
 
@@ -38,10 +38,10 @@ export default class Saloons extends Component {
 
 
             <div className="saloon-info">
-              <p className="saloon-border"> <img className="find-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/find.png?raw=true" alt="find-icon"/>{this.props.salonger.adress}, <span>{this.props.salonger.zip} </span></p>
-              <p className="saloon-border"> <img className="watch-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/watch.png?raw=true" alt="watch-icon"/>{this.props.salonger.open} </p>
-              <p className="saloon-border"> <img className="phone-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/phone.png?raw=true" alt="phone-icon"/>{this.props.salonger.tel} </p>
-              <p className="saloon-border"> <img className="web-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/worldwideweb.png?raw=true" alt="wwww-icon"/>{this.props.salonger.site} </p>
+              <p className="saloon-border"> <img className="find-saloon" src={require("./Images/find.png")} alt="find-icon"/>{this.props.salonger.adress}, <span>{this.props.salonger.zip} </span></p>
+              <p className="saloon-border"> <img className="watch-saloon" src={require("./Images/watch.png")} alt="watch-icon"/>{this.props.salonger.open} </p>
+              <p className="saloon-border"> <img className="phone-saloon" src={require("./Images/phone.png")} alt="phone-icon"/>{this.props.salonger.tel} </p>
+              <p className="saloon-border"> <img className="web-saloon" src={require("./Images/worldwideweb.png")} alt="wwww-icon"/>{this.props.salonger.site} </p>
               <p className="saloon-desc"> {this.props.salonger.desc} </p>
             </div>
 

@@ -14,7 +14,7 @@ export default class ChooseSaloon extends Component {
     return (
       <HashRouter>
         <div>
-          <img className="filter-menu" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/burger.png?raw=true" alt="expanding filter button"/>
+          <img className="filter-menu" src={require("./Images/burger.png")} alt="expanding filter button"/>
           <IphoneTop />
           <BackArrow />
           <DownArrow className="down-arrow"/>

@@ -9,7 +9,7 @@ export default class DownArrow extends Component {
     return (
       <HashRouter>
         <div>
-          <img className={this.props.className} src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/downarrow.png?raw=true" alt="Arrow pointing down"/>
+          <img className={this.props.className} src={require("./Images/downarrow.png")} alt="Arrow pointing down"/>
         </div>
       </HashRouter>
     );

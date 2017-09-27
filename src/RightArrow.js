@@ -9,7 +9,7 @@ export default class RightArrow extends Component {
       <HashRouter>
         <div>
           <Link to="/">
-          <img src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/rightarrow.png?raw=true"/></Link>
+          <img src={require("./Images/downarrow.png")}/></Link>
         </div>
       </HashRouter>
     );

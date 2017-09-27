@@ -8,7 +8,7 @@ export default class Home extends Component {
 
         <div>
           <div>
-            <img className="logo" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/hair.png?raw=true" alt="Logo"/>
+            <img className="logo" src={require("./Images/hair.png")} alt="Logo"/>
           </div>
         </div>
 

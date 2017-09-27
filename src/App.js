@@ -45,12 +45,6 @@ export default class App extends Component {
     })
   }
 
-  filterByPrice() {
-
-
-
-  }
-
 
   render() {
     return (
@@ -61,8 +55,6 @@ export default class App extends Component {
             allSaloons={this.state.allSaloons}
             filtredSaloons={this.state.filtredSaloons}
             updatePrice={this.updatePrice.bind(this)}
-            filterByPrice={this.filterByPrice.bind(this)}
-
         />
       </div>
     );

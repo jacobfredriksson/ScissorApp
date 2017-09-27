@@ -21,9 +21,6 @@ export default class ChooseSaloon extends Component {
           <h1 className="header-title"> Hår </h1>
           <div className="row price-box">
             <select className="price-interval"
-                // ref={option => this.selectedOption = option}
-                // onChange={this.test}
-                value={this.props.price}
                 onChange={this.props.updatePrice.bind(this)}
                 >
               <option> För att sortera efter pris klicka här </option>

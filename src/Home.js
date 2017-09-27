@@ -61,7 +61,7 @@ export default class Home extends Component {
                       allSaloons={this.props.allSaloons}
                       filtredSaloons={this.props.filtredSaloons}
                       price={this.props.price}
-                      filterByPrice={this.props.filterByPrice.bind(this)}
+
               />
             )}/>
           </Switch>

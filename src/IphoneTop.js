@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Link} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import './css/IphoneTop.css'
 
 export default class IphoneTop extends Component {

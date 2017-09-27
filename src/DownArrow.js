@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Link} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 import './css/DownArrow.css';
 
 
@@ -9,7 +9,7 @@ export default class DownArrow extends Component {
     return (
       <HashRouter>
         <div>
-          <img className="down-arrow" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/downarrow.png?raw=true"/>
+          <img className={this.props.className} src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/downarrow.png?raw=true" alt="Arrow pointing down"/>
         </div>
       </HashRouter>
     );

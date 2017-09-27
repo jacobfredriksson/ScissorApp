@@ -10,7 +10,6 @@ export default class Home extends Component {
           <div className="col-sm-12">
             <ul className="footer-ul">
               <li> <Link to="/">Hem </Link> </li>
-              <li> <Link to="/Schedule">Tider </Link> </li>
               <li> <Link to="/Saloons"> Salonger </Link> </li>
               <li> <Link to="/FavoritePage">Favoriter </Link> </li>
               <li> <Link to="/BookingPage">Boka </Link> </li>

@@ -6,17 +6,17 @@ li {
 
 li a {
   display: block;
-  color: black;
-  text-align: center;
+  color: #2B2B2B;
   padding: 10px 5px;
   text-decoration: none;
   list-style-type: none;
 }
 
 li a:hover {
+  width: 100%;
   text-decoration: none;
   list-style-type: none;
-  background-color: #ced2db;
+  background-color: #d8d8d8;
   color: #fff;
 }
 
@@ -26,8 +26,9 @@ li a:active {
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
+  font-size: 1.5em;
 }
 
 .dropdown-menu {
@@ -40,9 +41,7 @@ li a:active {
 }
 
 .navDropdown {
-  display: block;
   width: 100%;
-  text-align: center;
   background-color: #fff;
   border-bottom: 1px solid #D8D8D8;
   margin-bottom: 2px;
@@ -55,11 +54,18 @@ li a:active {
 }
 
  .dropdown-menu {
-   border: none;
+   /*border: none;*/
+   margin: 0;
+   padding: 0;
  }
 
 .dropdown-menu a {
   border-bottom: 1px solid #D8D8D8;
+}
+
+.dropdown-menu a:nth-child(4) {
+  border: none;
+  padding-bottom: 10px;
 }
 
 .dropdown-toggle a:hover {
@@ -69,4 +75,7 @@ li a:active {
 
 .caret {
   float: right;
+  /*display:none;*/
+  margin-top: 3%;
+  color: #d8d8d8;
 }

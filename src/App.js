@@ -8,96 +8,62 @@ export default class App extends Component {
     super(props)
 
     this.state = {
-      home: {
-        value: false,
-        name: 'home'
-      },
 
-      saloon: {
-        value: false,
-        name: 'saloon'
-      },
+      salonger: [],
 
-      booking: {
-        value: false,
-        name: 'booking'
-      },
+      allSaloons: [],
 
-      favorite: {
-        value: false,
-        name: 'favorite'
-      },
+      filtredSaloons: [],
 
-      login: {
-        value: false,
-        name: 'login'
-      },
+      price: '',
 
-      profile: {
-        value: false,
-        name: 'profile'
-      },
-
-      schedule: {
-        value: false,
-        name: 'schedule'
-      },
-
-      hair: {
-        value: false,
-        name: 'hair'
-      },
-
-      salonger: []
     }
   }
 
-  home() {
-    this.setState({
-      home: true
-    })
+
+  updatePrice(e) {
+    const minMaxValues = e.target.value.split("-")
+    let price = this.state.price;
+    this.setState({price})
+
+    const allSaloons = this.state.allSaloons
+
+    let hej = allSaloons.filter((el,i) => el.price >= minMaxValues[0] && el.price <= minMaxValues[1])
+    this.setState({filtredSaloons: hej})
   }
-
-
 
 
   componentDidMount() {
-      fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
-        .then((resp) => resp.json())
-        .then((data) => {
-          console.log(data)
-          this.setState({
-            salonger: data[0]
-          })
-      })
-    }
+    fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
+      .then((resp) => resp.json())
+      .then((data) => {
+        this.setState({
+          salonger: data[0],
+          allSaloons: data,
+          filtredSaloons: data
+        })
+    })
+  }
 
-  // allSalons() {
-  //   fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
-  //     .then(resp => resp.json())
-  //     .then(function (data){
-  //       console.log(data[0].open)
-  //       let hairSalons = data;
-  //       let myHairSalons = hairSalons.map(x =>
-  //         `
-  //           <h1> ${data[1].name} </h1>
-  //         `
-  //       )
-  //       this.setState({
-  //         salonger: myHairSalons
-  //       })
-  //   })
-  // }
+  filterByPrice() {
 
+
+
+  }
 
 
   render() {
     return (
-      <div>
+      <div className="container-fluid">
         <Home
+            price={this.state.price}
             salonger={this.state.salonger}
+            allSaloons={this.state.allSaloons}
+            filtredSaloons={this.state.filtredSaloons}
+            updatePrice={this.updatePrice.bind(this)}
+            filterByPrice={this.filterByPrice.bind(this)}
+
         />
-        {/* {this.allSalons()} */}
       </div>
     );
   }

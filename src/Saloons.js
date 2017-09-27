@@ -15,7 +15,7 @@ export default class Saloons extends Component {
 
           <IphoneTop />
 
-          <img className="heart" src="        https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/heart.png?raw=true" alt="heart"/>
+          <img className="heart" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/heart.png?raw=true" alt="heart"/>
 
           <img className="stars" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/stars.png?raw=true" alt="stars"/>
 

@@ -1,20 +1,24 @@
-.footer {
-  position: relative;
-  bottom: 0;
-  float: left;
-  border-bottom: 1px solid #D8D8D8;
-  text-align: center;
-  display: block;
-}
-
 .footer-ul {
+  background-color: #FFF;
   padding: 0;
-  padding-left: 10px;
   margin: 0;
+  margin-left: -8%;
   width: 100%;
   position: fixed;
   bottom: 0;
   text-align: center;
+}
+
+.footer-ul li {
+  float: left;
+  color: #2B2B2B;
+  width: 20%;
+  font-weight: bold;
+  border-right: 2px solid #d8d8d8;
+}
+
+.footer-ul li:nth-child(5) {
+  border-right: none;
 }
 
 .footer-ul li a {

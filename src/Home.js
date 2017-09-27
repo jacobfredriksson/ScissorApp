@@ -18,7 +18,7 @@ export default class Home extends Component {
   render() {
     return (
       <HashRouter>
-        <div className="container-fluid">
+        <div>
           <Switch>
 
             <Route exact path="/" render={() => (
@@ -56,7 +56,12 @@ export default class Home extends Component {
 
             <Route exact path="/ChooseSaloon" render={() => (
               <ChooseSaloon
+                      updatePrice={this.props.updatePrice.bind(this)}
                       salonger={this.props.salonger}
+                      allSaloons={this.props.allSaloons}
+                      filtredSaloons={this.props.filtredSaloons}
+                      price={this.props.price}
+                      filterByPrice={this.props.filterByPrice.bind(this)}
               />
             )}/>
           </Switch>

@@ -7,7 +7,7 @@
   "tel": "08-522 389 20",
   "site": "www.salongweb.se",
   "rating": "(32)",
-  "price": "320 kr",
+  "price": "320",
   "timeEst": "30 min",
   "open": "Öppet till 19.00 idag",
   "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
@@ -20,7 +20,7 @@
   "tel" : "08-522 389 20",
   "site" : "www.salongweb.se",
   "rating" : "(32)",
-  "price" : "520 kr",
+  "price" : "520",
   "timeEst" : "30 min",
   "open" : "Öppet till 19.00 idag",
   "desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"},
@@ -32,7 +32,7 @@
   "tel" : "08-522 389 20",
   "site" : "www.salongweb.se",
   "rating" : "(32)",
-  "price" : "150 kr",
+  "price" : "150",
   "timeEst" : "30 min",
   "open" : "Öppet till 19.00 idag",
   "desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
@@ -45,7 +45,7 @@
   "tel" : "08-522 389 20",
   "site" : "www.salongweb.se",
   "rating" : "(32)",
-  "price" : "120 kr",
+  "price" : "120",
   "timeEst" : "30 min",
   "open" : "Öppet till 19.00 idag",
   "desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"
@@ -58,7 +58,7 @@
   "tel" : "08-522 389 20",
   "site" : "www.salongweb.se",
   "rating" : "(32)",
-  "price" : "220 kr",
+  "price" : "220",
   "timeEst" : "30 min",
   "open" : "Öppet till 19.00 idag",
   "desc" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris"

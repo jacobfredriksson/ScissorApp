@@ -19,7 +19,7 @@ export default class ChooseSaloon extends Component {
           <BackArrow />
           <DownArrow className="down-arrow"/>
           <h1 className="header-title"> Hår </h1>
-          <div className="row price-box">
+          <div className="price-box">
             <select className="price-interval"
                 onChange={this.props.updatePrice.bind(this)}
                 >
@@ -46,14 +46,6 @@ export default class ChooseSaloon extends Component {
 
           )
           }
-          {/* <div className="saloon-data">
-            <span className="time-choose-saloon">{this.props.salonger.time}</span> <span className="name-choose-saloon">{this.props.salonger.name}</span>
-            <span className="price-choose-saloon">{this.props.salonger.price } </span>
-            <span className="stars-choose-saloon"> <Rating /></span>
-            <span className="rating-choose-saloon">{this.props.salonger.rating}</span>
-            <span className="timeEst-choose-saloon"> {this.props.salonger.timeEst}</span>
-            <p className="adress-choose-saloon">{this.props.salonger.adress}</p>
-          </div> */}
         </div>
       </HashRouter>
     );

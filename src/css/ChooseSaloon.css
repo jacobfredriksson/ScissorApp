@@ -3,6 +3,8 @@
 }
 
 .price-box {
+  width: 95%;
+  margin: 0 2.5% 0 2.5%;
   padding-top: 10px;
   height: 10%;
   border-top: 1px solid #B69F58;
@@ -30,10 +32,9 @@
 }
 
 .saloon-data {
-  width: 100%;
+  width: 95%;
   float: left;
-  margin-top: 3.5%;
-  margin-bottom: 3.5%;
+  margin: 3.5% 2.5% 3.5% 2.5%;
   border-bottom: 2px solid #F9F9F9;
 }
 

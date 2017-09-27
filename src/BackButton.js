@@ -9,7 +9,7 @@ export default class BackButton extends Component {
     return (
       <HashRouter>
       <div>
-        <button className="btn btn-success"> <Link to="/">Backa </Link></button>
+        <button > <Link to="/">Backa </Link></button>
 
         <HashRouter path="/" render={() => (
           <Home

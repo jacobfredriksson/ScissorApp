@@ -48,7 +48,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
+      <div>
         <Home
             price={this.state.price}
             salonger={this.state.salonger}

@@ -1,6 +1,7 @@
 .itopbar {
   position: absolute;
-  width: 92%;
+  width: 98%;
+  padding-left: 2%;
   top: 0%;
   opacity: 0.4;
 }

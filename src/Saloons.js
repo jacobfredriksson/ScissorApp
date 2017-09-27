@@ -37,11 +37,6 @@ export default class Saloons extends Component {
           </div>
 
 
-          {/* <h1 className="text-center"> Sallonger </h1>
-          <div className="row Price-box">
-            <p className="col-sm-8 price-interval"> Pris 250-500 kr </p>
-          </div> */}
-
             <div className="saloon-info">
               <p className="saloon-border"> <img className="find-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/find.png?raw=true" alt="find-icon"/>{this.props.salonger.adress}, <span>{this.props.salonger.zip} </span></p>
               <p className="saloon-border"> <img className="watch-saloon" src="https://github.com/jacobfredriksson/ScissorApp/blob/master/Resources/Images/watch.png?raw=true" alt="watch-icon"/>{this.props.salonger.open} </p>

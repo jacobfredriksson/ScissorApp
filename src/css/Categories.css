@@ -40,6 +40,11 @@ li a:active {
   background-color: #fff;
 }
 
+.categories-container {
+  width: 95%;
+  margin: 0 2.5% 0 2.5%;
+}
+
 .navDropdown {
   width: 100%;
   background-color: #fff;

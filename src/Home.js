@@ -49,7 +49,9 @@ export default class Home extends Component {
               <div>
                 <Logo />
                 <Saloons
-                      salonger={this.props.salonger}
+                      filtredSaloons={this.props.filtredSaloons}
+                      choosenSaloon={this.props.choosenSaloon}
+
                 />
               </div>
             )}/>
@@ -57,11 +59,10 @@ export default class Home extends Component {
             <Route exact path="/ChooseSaloon" render={() => (
               <ChooseSaloon
                       updatePrice={this.props.updatePrice.bind(this)}
-                      salonger={this.props.salonger}
+                      selectSaloon={this.props.selectSaloon.bind(this)}
                       allSaloons={this.props.allSaloons}
                       filtredSaloons={this.props.filtredSaloons}
                       price={this.props.price}
-
               />
             )}/>
           </Switch>

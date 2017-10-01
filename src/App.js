@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './css/App.css'
 import Home from './Home'
+import AllSalons from './Resources/AllSalons'
 
 
 export default class App extends Component {
@@ -9,23 +10,22 @@ export default class App extends Component {
 
     this.state = {
 
-      salonger: [],
+      allSaloons: AllSalons,
 
-      allSaloons: [],
+      filtredSaloons: AllSalons,
 
-      filtredSaloons: [],
-
-      price: '',
+      choosenSaloon: []
 
     }
+  }
+
+  selectSaloon(e, selected) {
+    this.setState({choosenSaloon: [selected]})
   }
 
 
   updatePrice(e) {
     const minMaxValues = e.target.value.split("-")
-    let price = this.state.price;
-    this.setState({price})
-
     const allSaloons = this.state.allSaloons
 
     let hej = allSaloons.filter((el,i) => el.price >= minMaxValues[0] && el.price <= minMaxValues[1])
@@ -33,28 +33,17 @@ export default class App extends Component {
   }
 
 
-  componentDidMount() {
-    fetch('http://localhost/Scissorapp/Resources/AllSalons.js')
-      .then((resp) => resp.json())
-      .then((data) => {
-        this.setState({
-          salonger: data[0],
-          allSaloons: data,
-          filtredSaloons: data
-        })
-    })
-  }
-
 
   render() {
     return (
       <div>
         <Home
+            choosenSaloon={this.state.choosenSaloon}
             price={this.state.price}
             salonger={this.state.salonger}
-            allSaloons={this.state.allSaloons}
             filtredSaloons={this.state.filtredSaloons}
             updatePrice={this.updatePrice.bind(this)}
+            selectSaloon={this.selectSaloon.bind(this)}
         />
       </div>
     );

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter} from 'react-router-dom';
+import {HashRouter, Link} from 'react-router-dom';
 import './css/ChooseSaloon.css';
 import IphoneTop from './IphoneTop';
 import BackArrow from './BackArrow';
@@ -8,7 +8,9 @@ import RightArrow from './RightArrow';
 import Rating from './Rating';
 
 export default class ChooseSaloon extends Component {
-
+  handleClick = (e, choosenSaloon) => {
+    console.log(choosenSaloon)
+  }
 
   render() {
     return (
@@ -16,7 +18,9 @@ export default class ChooseSaloon extends Component {
         <div>
           <img className="filter-menu" src={require("./Images/burger.png")} alt="expanding filter button"/>
           <IphoneTop />
-          <BackArrow />
+          <Link to="/">
+            <BackArrow />
+          </Link>
           <DownArrow className="down-arrow"/>
           <h1 className="header-title"> Hår </h1>
           <div className="price-box">
@@ -30,14 +34,17 @@ export default class ChooseSaloon extends Component {
               <option value="500-800"> Pris 500-1000 </option>
             </select>
           </div>
-
           {
             this.props.filtredSaloons.map((el, i) =>
             <div className="saloon-data" key={i}>
               <span className="time-choose-saloon">{el.time}</span>
               <span className="name-choose-saloon">{el.name}</span>
               <span className="price-choose-saloon">{el.price}</span>
-              <span className="rightArrow-choose-saloon"> <RightArrow /> </span>
+              <span className="rightArrow-choose-saloon"> <Link to="/Saloons"
+              onClick={(e) => this.props.selectSaloon(e, el)}
+              choosenSaloon ={this.props.choosenSaloon}
+              >
+              <RightArrow /> </Link> </span>
               <span className="stars-choose-saloon"><Rating /></span>
               <span className="rating-choose-saloon">{el.rating}</span>
               <span className="timeEst-choose-saloon">{el.timeEst}</span>

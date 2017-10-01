@@ -1,5 +1,6 @@
 {
   "name": "cloudnineapp",
+  "homepage" : "http://scissor.jacobfredriksson.se",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

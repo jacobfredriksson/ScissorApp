@@ -49,22 +49,22 @@ export default class Home extends Component {
               <div>
                 <Logo />
                 <Saloons
-                      filtredSaloons={this.props.filtredSaloons}
-                      choosenSaloon={this.props.choosenSaloon}
-
+                  filtredSaloons={this.props.filtredSaloons}
+                  selectedSaloon={this.props.selectedSaloon}
                 />
               </div>
             )}/>
 
             <Route exact path="/ChooseSaloon" render={() => (
               <ChooseSaloon
-                      updatePrice={this.props.updatePrice.bind(this)}
-                      selectSaloon={this.props.selectSaloon.bind(this)}
-                      allSaloons={this.props.allSaloons}
-                      filtredSaloons={this.props.filtredSaloons}
-                      price={this.props.price}
+                updatePrice={this.props.updatePrice.bind(this)}
+                selectSaloon={this.props.selectSaloon.bind(this)}
+                allSaloons={this.props.allSaloons}
+                filtredSaloons={this.props.filtredSaloons}
+                price={this.props.price}
               />
             )}/>
+            
           </Switch>
         </div>
       </HashRouter>

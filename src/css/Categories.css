@@ -16,8 +16,7 @@ li a:hover {
   width: 100%;
   text-decoration: none;
   list-style-type: none;
-  background-color: #d8d8d8;
-  color: #fff;
+  background-color: #f4f5f7;
 }
 
 li a:active {
@@ -25,10 +24,20 @@ li a:active {
   list-style-type: none;
 }
 
+li a:visited {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li a:focus{
+  text-decoration: none;
+  list-style-type: none;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 .dropdown-menu {
@@ -59,7 +68,6 @@ li a:active {
 }
 
  .dropdown-menu {
-   /*border: none;*/
    margin: 0;
    padding: 0;
  }
@@ -80,7 +88,6 @@ li a:active {
 
 .caret {
   float: right;
-  /*display:none;*/
   margin-top: 3%;
-  color: #d8d8d8;
+  color: #2B2B2B;
 }

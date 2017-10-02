@@ -12,19 +12,13 @@ export default class Saloons extends Component {
     return (
       <HashRouter>
         <div>
-
-          <IphoneTop className=""/>
-
+          <IphoneTop />
           <img className="heart" src={require("./Images/heart.png")} alt="heart"/>
-
           <img className="stars" src={require("./Images/stars.png")} alt="stars"/>
-
-
 
           <Link to="/ChooseSaloon">
             <BackArrow />
           </Link>
-
 
           <div className="info-schedule-container">
             <div className="info-schedule">
@@ -36,9 +30,8 @@ export default class Saloons extends Component {
             </div>
           </div>
 
-
             {
-              this.props.choosenSaloon.map((el, i) =>
+              this.props.selectedSaloon.map((el, i) =>
               <div>
                 <p className="number"> {el.rating}</p>
                 <h3 className="type-of-saloon"> {el.name} </h3>
@@ -52,8 +45,6 @@ export default class Saloons extends Component {
               </div>
             )
             }
-
-
         </div>
       </HashRouter>
     );

@@ -5,13 +5,9 @@ export default class Home extends Component {
 
   render() {
     return (
-
-        <div>
-          <div>
-            <img className="logo" src={require("./Images/hair.png")} alt="Logo"/>
-          </div>
-        </div>
-
+      <div>
+        <img className="logo" src={require("./Images/hair.png")} alt="Logo"/>
+      </div>
     );
   }
 }

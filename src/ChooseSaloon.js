@@ -8,9 +8,6 @@ import RightArrow from './RightArrow';
 import Rating from './Rating';
 
 export default class ChooseSaloon extends Component {
-  handleClick = (e, choosenSaloon) => {
-    console.log(choosenSaloon)
-  }
 
   render() {
     return (
@@ -25,8 +22,7 @@ export default class ChooseSaloon extends Component {
           <h1 className="header-title"> Hår </h1>
           <div className="price-box">
             <select className="price-interval"
-                onChange={this.props.updatePrice.bind(this)}
-                >
+                    onChange={this.props.updatePrice.bind(this)}>
               <option> För att sortera efter pris klicka här </option>
               <option value="0-149"> Pris: 0-149 </option>
               <option value="150-249"> Pris 150-249 </option>
@@ -40,17 +36,20 @@ export default class ChooseSaloon extends Component {
               <span className="time-choose-saloon">{el.time}</span>
               <span className="name-choose-saloon">{el.name}</span>
               <span className="price-choose-saloon">{el.price}</span>
-              <span className="rightArrow-choose-saloon"> <Link to="/Saloons"
-              onClick={(e) => this.props.selectSaloon(e, el)}
-              choosenSaloon ={this.props.choosenSaloon}
-              >
-              <RightArrow /> </Link> </span>
-              <span className="stars-choose-saloon"><Rating /></span>
+              <span className="rightArrow-choose-saloon">
+                <Link to="/Saloons"
+                  onClick={(e) => this.props.selectSaloon(e, el)}
+                  choosenSaloon={this.props.choosenSaloon}>
+                  <RightArrow />
+                </Link>
+              </span>
+              <span className="stars-choose-saloon">
+                <Rating />
+              </span>
               <span className="rating-choose-saloon">{el.rating}</span>
               <span className="timeEst-choose-saloon">{el.timeEst}</span>
               <p className="adress-choose-saloon">{el.adress}</p>
             </div>
-
           )
           }
         </div>

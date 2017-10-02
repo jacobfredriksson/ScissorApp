@@ -26,7 +26,7 @@
   color: #F9F9F9;
 }
 
-.type-of-saloon {
+.type-of-salon {
   position: absolute;
   left: 7%;
   top: 25%;
@@ -57,19 +57,31 @@
   border-bottom: 2px solid #B69F58;
 }
 
-.saloon-name {
+.salon-name {
   font-size: 2em;
   text-align: center;
 }
 
-.find-saloon, .watch-saloon, .phone-saloon, .web-saloon {
+.find-salon, .watch-salon, .phone-salon, .web-salon {
   margin: 3%;
 }
 
-.saloon-desc {
+.salon-desc {
   margin-left: 3.5%;
 }
 
-.saloon-border {
+.salon-border {
   border-bottom: 1px solid #F9F9F9;
+}
+
+.salons-backArrow img {
+  vertical-align: middle;
+  transition: opacity 0.3s;
+  -webkit-transition: opacity 0.3s;
+  opacity: 0.7;
+}
+
+.salons-backArrow:hover img {
+  opacity: 1;
+  width: 3%;
 }

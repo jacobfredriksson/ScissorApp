@@ -9,34 +9,38 @@ export default class App extends Component {
     super(props)
 
     this.state = {
-      allSaloons: AllSalons,
+      allsalons: AllSalons,
 
-      filtredSaloons: AllSalons,
+      filtredsalons: AllSalons,
 
-      selectedSaloon: []
+      selectedsalon: []
     }
   }
 
-  selectSaloon(e, selected) {
-    this.setState({selectedSaloon: [selected]})
+  selectsalon(e, selected) {
+    this.setState({selectedsalon: [selected]})
   }
 
   updatePrice(e) {
     const minMaxValues = e.target.value.split("-")
-    const allSaloons = this.state.allSaloons
+    const allsalons = this.state.allsalons
 
-    let filtredSaloons = allSaloons.filter((el,i) => el.price >= minMaxValues[0] && el.price <= minMaxValues[1])
-    this.setState({filtredSaloons: filtredSaloons})
+    let filtredsalons = allsalons.filter((el,i) => el.price >= minMaxValues[0] && el.price <= minMaxValues[1])
+    this.setState({filtredsalons: filtredsalons})
+
+    if (filtredsalons.length === 0) {
+      this.setState({filtredsalons: AllSalons})
+    }
   }
 
   render() {
     return (
       <div>
         <Home
-          selectedSaloon={this.state.selectedSaloon}
-          filtredSaloons={this.state.filtredSaloons}
+          selectedsalon={this.state.selectedsalon}
+          filtredsalons={this.state.filtredsalons}
           updatePrice={this.updatePrice.bind(this)}
-          selectSaloon={this.selectSaloon.bind(this)}
+          selectsalon={this.selectsalon.bind(this)}
         />
       </div>
     );

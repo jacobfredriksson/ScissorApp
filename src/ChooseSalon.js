@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {HashRouter, Link} from 'react-router-dom';
-import './css/ChooseSaloon.css';
+import './css/ChooseSalon.css';
 import IphoneTop from './IphoneTop';
 import BackArrow from './BackArrow';
 import DownArrow from './DownArrow';
 import RightArrow from './RightArrow';
 import Rating from './Rating';
 
-export default class ChooseSaloon extends Component {
+export default class Choosesalon extends Component {
 
   render() {
     return (
@@ -15,7 +15,7 @@ export default class ChooseSaloon extends Component {
         <div>
           <img className="filter-menu" src={require("./Images/burger.png")} alt="expanding filter button"/>
           <IphoneTop />
-          <Link to="/">
+          <Link to="/" className="arrow-highlight">
             <BackArrow />
           </Link>
           <DownArrow className="down-arrow"/>
@@ -31,24 +31,24 @@ export default class ChooseSaloon extends Component {
             </select>
           </div>
           {
-            this.props.filtredSaloons.map((el, i) =>
-            <div className="saloon-data" key={i}>
-              <span className="time-choose-saloon">{el.time}</span>
-              <span className="name-choose-saloon">{el.name}</span>
-              <span className="price-choose-saloon">{el.price}</span>
-              <span className="rightArrow-choose-saloon">
-                <Link to="/Saloons"
-                  onClick={(e) => this.props.selectSaloon(e, el)}
-                  choosenSaloon={this.props.choosenSaloon}>
+            this.props.filtredsalons.map((el, i) =>
+            <div className="salon-data" key={i}>
+              <span className="time-choose-salon">{el.time}</span>
+              <span className="name-choose-salon">{el.name}</span>
+              <span className="price-choose-salon">{el.price}</span>
+              <span className="rightArrow-choose-salon">
+                <Link to="/salons"
+                  onClick={(e) => this.props.selectsalon(e, el)}
+                  choosensalon={this.props.choosensalon}>
                   <RightArrow />
                 </Link>
               </span>
-              <span className="stars-choose-saloon">
+              <span className="stars-choose-salon">
                 <Rating />
               </span>
-              <span className="rating-choose-saloon">{el.rating}</span>
-              <span className="timeEst-choose-saloon">{el.timeEst}</span>
-              <p className="adress-choose-saloon">{el.adress}</p>
+              <span className="rating-choose-salon">{el.rating}</span>
+              <span className="timeEst-choose-salon">{el.timeEst}</span>
+              <p className="adress-choose-salon">{el.adress}</p>
             </div>
           )
           }

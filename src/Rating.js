@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/Rating.css';
 
 
-export default class ChooseSaloon extends Component {
+export default class Choosesalon extends Component {
 
   render() {
     return (

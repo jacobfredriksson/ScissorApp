@@ -12,46 +12,46 @@ export default class Home extends Component {
           <Nav>
             <div className="categories-container">
               <NavDropdown className="navDropdown" eventKey={3} title="HÅR" id="basic-nav-dropdow">
-                <Link to="/ChooseSaloon">Klippa</Link>
-                <Link to="/ChooseSaloon">Slinga</Link>
-                <Link to="/ChooseSaloon">Färga</Link>
-                <Link to="/ChooseSaloon">Putsa</Link>
+                <Link to="/Choosesalon">Klippa</Link>
+                <Link to="/Choosesalon">Slinga</Link>
+                <Link to="/Choosesalon">Färga</Link>
+                <Link to="/Choosesalon">Putsa</Link>
               </NavDropdown>
             </div>
 
             <div className="categories-container">
               <NavDropdown className="navDropdown" eventKey={3} title="NAGLAR" id="basic-nav-dropdown">
-                <Link to="/ChooseSaloon">Alt1</Link>
-                <Link to="/ChooseSaloon">Alt2</Link>
-                <Link to="/ChooseSaloon">Alt3</Link>
-                <Link to="/ChooseSaloon">Alt4</Link>
+                <Link to="/Choosesalon">Alt1</Link>
+                <Link to="/Choosesalon">Alt2</Link>
+                <Link to="/Choosesalon">Alt3</Link>
+                <Link to="/Choosesalon">Alt4</Link>
               </NavDropdown>
             </div>
 
             <div className="categories-container">
               <NavDropdown className="navDropdown" eventKey={3} title="HUD" id="basic-nav-dropdown">
-                <Link to="/ChooseSaloon">Alt1</Link>
-                <Link to="/ChooseSaloon">Alt2</Link>
-                <Link to="/ChooseSaloon">Alt3</Link>
-                <Link to="/ChooseSaloon">Alt4</Link>
+                <Link to="/Choosesalon">Alt1</Link>
+                <Link to="/Choosesalon">Alt2</Link>
+                <Link to="/Choosesalon">Alt3</Link>
+                <Link to="/Choosesalon">Alt4</Link>
               </NavDropdown>
             </div>
 
             <div className="categories-container">
               <NavDropdown className="navDropdown" eventKey={3} title="MASSAGE" id="basic-nav-dropdown">
-                <Link to="/ChooseSaloon">Alt1</Link>
-                <Link to="/ChooseSaloon">Alt2</Link>
-                <Link to="/ChooseSaloon">Alt3</Link>
-                <Link to="/ChooseSaloon">Alt4</Link>
+                <Link to="/Choosesalon">Alt1</Link>
+                <Link to="/Choosesalon">Alt2</Link>
+                <Link to="/Choosesalon">Alt3</Link>
+                <Link to="/Choosesalon">Alt4</Link>
               </NavDropdown>
             </div>
 
             <div className="categories-container">
               <NavDropdown className="navDropdown" eventKey={3} title="ANSIKTE" id="basic-nav-dropdown">
-                <Link to="/ChooseSaloon">Alt1</Link>
-                <Link to="/ChooseSaloon">Alt2</Link>
-                <Link to="/ChooseSaloon">Alt3</Link>
-                <Link to="/ChooseSaloon">Alt4</Link>
+                <Link to="/Choosesalon">Alt1</Link>
+                <Link to="/Choosesalon">Alt2</Link>
+                <Link to="/Choosesalon">Alt3</Link>
+                <Link to="/Choosesalon">Alt4</Link>
               </NavDropdown>
             </div>
           </Nav>

@@ -5,9 +5,9 @@ import Footer from './Footer';
 import BookingPage from './BookingPage';
 import FavoritePage from './FavoritePage';
 import ProfilePage from './ProfilePage';
-import Saloons from './Saloons';
+import Salons from './Salons';
 import SchedulePage from './SchedulePage';
-import ChooseSaloon from './ChooseSaloon';
+import ChooseSalon from './ChooseSalon';
 
 import {HashRouter, Route, Switch} from 'react-router-dom';
 
@@ -45,26 +45,26 @@ export default class Home extends Component {
               <ProfilePage />
             )}/>
 
-            <Route exact path="/Saloons" render={() => (
+            <Route exact path="/salons" render={() => (
               <div>
                 <Logo />
-                <Saloons
-                  filtredSaloons={this.props.filtredSaloons}
-                  selectedSaloon={this.props.selectedSaloon}
+                <Salons
+                  filtredsalons={this.props.filtredsalons}
+                  selectedsalon={this.props.selectedsalon}
                 />
               </div>
             )}/>
 
-            <Route exact path="/ChooseSaloon" render={() => (
-              <ChooseSaloon
+            <Route exact path="/Choosesalon" render={() => (
+              <ChooseSalon
                 updatePrice={this.props.updatePrice.bind(this)}
-                selectSaloon={this.props.selectSaloon.bind(this)}
-                allSaloons={this.props.allSaloons}
-                filtredSaloons={this.props.filtredSaloons}
+                selectsalon={this.props.selectsalon.bind(this)}
+                allsalons={this.props.allsalons}
+                filtredsalons={this.props.filtredsalons}
                 price={this.props.price}
               />
             )}/>
-            
+
           </Switch>
         </div>
       </HashRouter>

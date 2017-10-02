@@ -26,26 +26,26 @@
 }
 
 .filter-menu {
-  position: absolute;
+  position: fixed;
   right: 5%;
   top: 5%;
 }
 
-.saloon-data {
+.salon-data {
   width: 95%;
   float: left;
   margin: 3.5% 2.5% 3.5% 2.5%;
   border-bottom: 2px solid #F9F9F9;
 }
 
-.time-choose-saloon {
+.time-choose-salon {
   margin-top: 1.2%;
   font-weight: bold;
   margin-right: 3%;
   float: left;
 }
 
-.name-choose-saloon {
+.name-choose-salon {
   margin-left: 5%;
   margin-right: 13%;
   float: left;
@@ -54,43 +54,44 @@
   color: #202020;
 }
 
-.price-choose-saloon {
+.price-choose-salon {
   font-weight: bold;
   color: #202020;
   display: inline-block;
   margin-top: 1.2%;
 }
 
-.rightArrow-choose-saloon {
-  position: absolute;
-  right: 7%;
+.rightArrow-choose-salon {
+  position: fixed;
+  right: 5%;
 }
 
-.stars-choose-saloon {
+.stars-choose-salon {
   float: left;
   margin-left: 17%;
 }
 
-.rating-choose-saloon {
+.rating-choose-salon {
   font-size: 0.7em;
   float: left;
   margin-top: 1.2%;
   margin-left: 2%;
 }
 
-.timeEst-choose-saloon {
+.timeEst-choose-salon {
   margin-left: 34%;
   color: #656565;
 }
 
-.adress-choose-saloon {
+.adress-choose-salon {
   margin-left: 17%;
   color: #656565;
 }
 
 .down-arrow {
-  position: absolute;
-  top: 12.5%;
+  position: fixed;
+  top: 12.3%;
   right: 5%;
+  width: 5%;
   pointer-events:none;
 }
